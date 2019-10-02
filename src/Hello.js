@@ -1,9 +1,24 @@
 import React, { Component } from "react";
+import "./Hello.css";
 
-class Hello extends Component {
-  render() {
-    return <h1>first component</h1>;
-  }
-}
+const Hello = props => {
+  return (
+    <div className="f1 tc">
+      <h1>first component</h1>
+      <p>{props.greeting}</p>
+    </div>
+  );
+};
+
+// class Hello extends Component {
+//   render() {
+//     return (
+//       <div className="f1 tc">
+//         <h1>first component</h1>
+//         <p>{this.props.greeting}</p>
+//       </div>
+//     );
+//   }
+// }
 
 export default Hello;
