@@ -7,7 +7,8 @@ import * as serviceWorker from "./serviceWorker";
 import "tachyons";
 
 ReactDOM.render(
-  <div>
+  <div className="tc">
+    <h1 className="title green ttu f1">Robofriends</h1>
     <CardList robots={robots} />
   </div>,
   document.getElementById("root")
