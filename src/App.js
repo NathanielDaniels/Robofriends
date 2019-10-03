@@ -13,6 +13,7 @@ class App extends Component {
   }
 
   onSearchChange(event) {
+    //? This logs keyboard events
     console.log(event.target.value);
   }
   render() {
