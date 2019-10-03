@@ -1,19 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import CardList from "./CardList";
-import { robots } from "./robots";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "tachyons";
 
-ReactDOM.render(
-  <div className="tc">
-    <h1 className="title green ttu f1">Robofriends</h1>
-    <input type="text" placeholder="search Robots" className="pa2 ma2"></input>
-    <CardList robots={robots} />
-  </div>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
