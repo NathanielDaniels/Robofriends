@@ -8,7 +8,8 @@ import "tachyons";
 
 ReactDOM.render(
   <div className="tc">
-    <h1 className="title green ttu f1 default">Robofriends</h1>
+    <h1 className="title green ttu f1">Robofriends</h1>
+    <input type="text" placeholder="search Robots" className="pa2 ma2"></input>
     <CardList robots={robots} />
   </div>,
   document.getElementById("root")
